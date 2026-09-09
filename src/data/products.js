@@ -5,7 +5,7 @@ export const CATEGORIES = [
     slug: 'electronics',
     tagline: 'Smart Tech, Better Life',
     description: 'Cutting-edge gadgets, audio gear, smart wearables and consumer tech carefully sourced from verified global manufacturers.',
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80',
+    image: '/assets/image-copy-4.png',
     itemCount: 24,
     icon: 'Laptop'
   },
@@ -15,7 +15,7 @@ export const CATEGORIES = [
     slug: 'home-kitchen',
     tagline: 'Comfort for Every Home',
     description: 'High-grade stainless steel cookware, functional kitchenware, and durable home essentials engineered for longevity.',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&auto=format&fit=crop&q=80',
+    image: '/assets/image-copy-5.png',
     itemCount: 18,
     icon: 'UtensilsCrossed'
   },
@@ -25,7 +25,7 @@ export const CATEGORIES = [
     slug: 'industrial-products',
     tagline: 'Built for Performance',
     description: 'Commercial power tools, precision hardware, measurement instruments and workshop equipment with rigorous safety standards.',
-    image: 'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&auto=format&fit=crop&q=80',
+    image: '/assets/image-copy-6.png',
     itemCount: 32,
     icon: 'Wrench'
   },
@@ -35,7 +35,7 @@ export const CATEGORIES = [
     slug: 'office-supplies',
     tagline: 'Work Smarter',
     description: 'Ergonomic seating, executive desk accessories, stationery and productivity essentials for modern corporate workspaces.',
-    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&auto=format&fit=crop&q=80',
+    image: '/assets/image-copy-7.png',
     itemCount: 15,
     icon: 'Briefcase'
   },
@@ -45,7 +45,7 @@ export const CATEGORIES = [
     slug: 'general-merchandise',
     tagline: 'Daily Needs, Global Quality',
     description: 'Carefully curated lifestyle goods, travel gear, storage solutions and daily utilities with international standard QC.',
-    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&auto=format&fit=crop&q=80',
+    image: '/assets/image-copy-8.png',
     itemCount: 28,
     icon: 'PackageCheck'
   }

@@ -70,7 +70,7 @@ export default function Header() {
             <img
               src="/assets/logo.png"
               alt="AK Enterprises Logo"
-              className="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-16 sm:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 

@@ -68,11 +68,14 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="rounded-3xl overflow-hidden border border-slate-200 shadow-card bg-slate-50">
+          <div className="relative rounded-3xl overflow-hidden border border-slate-200 shadow-card bg-slate-50">
+            {/* Sky visual patch on left side */}
+            <div className="absolute left-0 bottom-0 w-1/3 h-2/3 bg-gradient-to-tr from-sky-300/40 via-sky-200/25 to-transparent rounded-br-3xl pointer-events-none z-10" />
+            <div className="absolute left-0 bottom-0 w-1/4 h-1/2 bg-gradient-to-t from-sky-400/20 to-transparent rounded-br-3xl pointer-events-none z-10" />
             <img
-              src="/assets/hero-bg.png"
+              src="/assets/image-copy-3.png"
               alt="AK Enterprises Trade & Logistics"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover relative z-0"
             />
           </div>
         </div>

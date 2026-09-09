@@ -14,7 +14,7 @@ export default function Footer() {
               <img
                 src="/assets/logo.png"
                 alt="AK Enterprises Logo"
-                className="h-14 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
             </Link>
             <p className="text-brand-cyan text-base font-semibold tracking-wide">

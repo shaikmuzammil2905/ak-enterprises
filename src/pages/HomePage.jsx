@@ -60,104 +60,101 @@ export default function HomePage() {
   return (
     <div className="space-y-16 sm:space-y-24 pb-12">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-ice/40 via-white to-white pt-6 sm:pt-10 lg:pt-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Hero Content */}
-            <div className="lg:col-span-6 space-y-6 sm:space-y-7 text-center lg:text-left">
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-sky text-brand-navy font-semibold text-xs tracking-wide">
-                <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse" />
-                <span>Your Global Trade Partner</span>
+      <section className="relative overflow-hidden min-h-[520px] sm:min-h-[600px] flex items-center">
+        {/* Full Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/assets/hero-bg.png"
+            alt="AK Enterprises Global Trade"
+            className="w-full h-full object-cover object-center"
+          />
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/85 via-brand-navy/70 to-brand-navy/40" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16">
+          <div className="max-w-2xl space-y-6 sm:space-y-7 text-center lg:text-left">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white font-semibold text-xs tracking-wide border border-white/20">
+              <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse" />
+              <span>Your Global Trade Partner</span>
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-lg">
+              Connecting Markets Across the World
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-slate-200 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+              We specialize in export and import, delivering quality products,
+              reliable logistics and global trade solutions.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <Link
+                to="/shop"
+                className="flex items-center gap-2 bg-brand-cyan hover:bg-brand-cyan-light text-white font-bold px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-95"
+              >
+                <span>Explore Our Products →</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+
+              <Link
+                to="/contact"
+                className="flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white border border-white/30 font-bold px-7 py-3.5 rounded-xl shadow-sm hover:shadow transition-all duration-200"
+              >
+                <span>Contact Us</span>
+              </Link>
+            </div>
+
+            {/* Feature Highlights under CTAs */}
+            <div className="pt-6 border-t border-white/20 grid grid-cols-3 gap-3 sm:gap-6 text-left">
+              <div className="flex items-start gap-2.5">
+                <div className="p-2 rounded-lg bg-white/15 text-brand-cyan shrink-0">
+                  <Plane className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs sm:text-sm font-bold text-white">Global Shipping</h4>
+                  <p className="text-[11px] text-slate-300 hidden sm:block">Worldwide Reach</p>
+                </div>
               </div>
 
-              {/* Headline */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-navy tracking-tight leading-[1.12]">
-                Connecting Markets Across the World
-              </h1>
-
-              {/* Subtitle */}
-              <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-                We specialize in export and import, delivering quality products,
-                reliable logistics and global trade solutions.
-              </p>
-
-              {/* CTA Buttons */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
-                <Link
-                  to="/shop"
-                  className="flex items-center gap-2 bg-brand-navy hover:bg-brand-navy-light text-white font-bold px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-95"
-                >
-                  <span>Explore Our Products →</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-
-                <Link
-                  to="/contact"
-                  className="flex items-center gap-2 bg-white hover:bg-slate-50 text-brand-navy border border-slate-300 font-bold px-7 py-3.5 rounded-xl shadow-sm hover:shadow transition-all duration-200"
-                >
-                  <span>Contact Us</span>
-                </Link>
+              <div className="flex items-start gap-2.5">
+                <div className="p-2 rounded-lg bg-white/15 text-brand-cyan shrink-0">
+                  <ShieldCheck className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs sm:text-sm font-bold text-white">Trusted Suppliers</h4>
+                  <p className="text-[11px] text-slate-300 hidden sm:block">Quality Assured</p>
+                </div>
               </div>
 
-              {/* Feature Highlights under CTAs */}
-              <div className="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-3 sm:gap-6 text-left">
-                <div className="flex items-start gap-2.5">
-                  <div className="p-2 rounded-lg bg-blue-50 text-brand-cyan shrink-0">
-                    <Plane className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs sm:text-sm font-bold text-slate-800">Global Shipping</h4>
-                    <p className="text-[11px] text-slate-500 hidden sm:block">Worldwide Reach</p>
-                  </div>
+              <div className="flex items-start gap-2.5">
+                <div className="p-2 rounded-lg bg-white/15 text-brand-cyan shrink-0">
+                  <TrendingUp className="w-4 h-4" />
                 </div>
-
-                <div className="flex items-start gap-2.5">
-                  <div className="p-2 rounded-lg bg-blue-50 text-brand-cyan shrink-0">
-                    <ShieldCheck className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs sm:text-sm font-bold text-slate-800">Trusted Suppliers</h4>
-                    <p className="text-[11px] text-slate-500 hidden sm:block">Quality Assured</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-2.5">
-                  <div className="p-2 rounded-lg bg-blue-50 text-brand-cyan shrink-0">
-                    <TrendingUp className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs sm:text-sm font-bold text-slate-800">Business Growth</h4>
-                    <p className="text-[11px] text-slate-500 hidden sm:block">Together We Grow</p>
-                  </div>
+                <div>
+                  <h4 className="text-xs sm:text-sm font-bold text-white">Business Growth</h4>
+                  <p className="text-[11px] text-slate-300 hidden sm:block">Together We Grow</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Right Hero Visual Banner */}
-            <div className="lg:col-span-6 relative mt-4 lg:mt-0">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 group">
-                <img
-                  src="/assets/hero-bg.png"
-                  alt="AK Enterprises Global Trade, Ship, Flight, and Logistics"
-                  className="w-full h-auto object-cover object-center max-h-[460px] sm:max-h-[520px] transition-transform duration-700 group-hover:scale-105"
-                />
-
-                {/* Floating Vijayawada to the World Badge */}
-                <div className="absolute top-4 right-4 bg-brand-navy/95 backdrop-blur-md text-white p-3 rounded-2xl shadow-lg border border-brand-cyan/40 flex items-center gap-3 animate-float">
-                  <div className="w-9 h-9 rounded-xl bg-brand-cyan/20 flex items-center justify-center text-brand-cyan shrink-0">
-                    <Globe className="w-5 h-5" />
-                  </div>
-                  <div className="text-left">
-                    <span className="text-[10px] uppercase font-bold tracking-wider text-brand-cyan block">
-                      From Vijayawada
-                    </span>
-                    <span className="text-xs font-bold tracking-tight">
-                      To The World
-                    </span>
-                  </div>
-                </div>
-              </div>
+          {/* Floating Vijayawada to the World Badge */}
+          <div className="hidden lg:flex absolute top-8 right-8 bg-brand-navy/95 backdrop-blur-md text-white p-3 rounded-2xl shadow-lg border border-brand-cyan/40 items-center gap-3 animate-float">
+            <div className="w-9 h-9 rounded-xl bg-brand-cyan/20 flex items-center justify-center text-brand-cyan shrink-0">
+              <Globe className="w-5 h-5" />
+            </div>
+            <div className="text-left">
+              <span className="text-[10px] uppercase font-bold tracking-wider text-brand-cyan block">
+                From Vijayawada
+              </span>
+              <span className="text-xs font-bold tracking-tight">
+                To The World
+              </span>
             </div>
           </div>
         </div>
@@ -192,12 +189,12 @@ export default function HomePage() {
               className="group bg-white rounded-2xl border border-slate-100 p-4 shadow-sm hover:shadow-card hover:border-brand-cyan/40 transition-all duration-300 flex flex-col justify-between"
             >
               {/* Image Container */}
-              <div className="aspect-square rounded-xl bg-slate-50 overflow-hidden mb-4 p-3 flex items-center justify-center">
+              <div className="aspect-square rounded-xl bg-slate-50 overflow-hidden mb-4 flex items-center justify-center">
                 <img
                   src={cat.image}
                   alt={cat.name}
                   loading="lazy"
-                  className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300 mix-blend-multiply"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
 
