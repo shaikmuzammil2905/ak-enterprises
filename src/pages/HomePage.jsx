@@ -73,7 +73,7 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16">
-          <div className="max-w-2xl space-y-6 sm:space-y-7 text-center lg:text-left bg-slate-900/30 p-6 sm:p-8 rounded-3xl backdrop-blur-xs border border-white/10">
+          <div className="max-w-2xl space-y-6 sm:space-y-7 text-center lg:text-left">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-navy/80 backdrop-blur-md text-white font-semibold text-xs tracking-wide border border-brand-cyan/30 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse" />
