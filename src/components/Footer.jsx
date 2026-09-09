@@ -10,11 +10,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
           {/* Brand Info Column */}
           <div className="lg:col-span-2 space-y-4">
-            <Link to="/" className="inline-block bg-white p-2.5 rounded-2xl shadow-md">
+            <Link to="/" className="inline-block bg-white p-3 rounded-2xl shadow-md">
               <img
                 src="/assets/logo.png"
                 alt="AK Enterprises Logo"
-                className="h-16 w-auto object-contain"
+                className="h-20 sm:h-24 w-auto object-contain"
               />
             </Link>
             <p className="text-brand-cyan text-base font-semibold tracking-wide">

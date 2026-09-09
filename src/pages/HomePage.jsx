@@ -68,25 +68,25 @@ export default function HomePage() {
             alt="AK Enterprises Global Trade"
             className="w-full h-full object-cover object-center"
           />
-          {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/85 via-brand-navy/70 to-brand-navy/40" />
+          {/* Light subtle gradient overlay - removes heavy darkness/shadow while preserving text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/45 via-slate-900/20 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16">
-          <div className="max-w-2xl space-y-6 sm:space-y-7 text-center lg:text-left">
+          <div className="max-w-2xl space-y-6 sm:space-y-7 text-center lg:text-left bg-slate-900/30 p-6 sm:p-8 rounded-3xl backdrop-blur-xs border border-white/10">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white font-semibold text-xs tracking-wide border border-white/20">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-navy/80 backdrop-blur-md text-white font-semibold text-xs tracking-wide border border-brand-cyan/30 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse" />
               <span>Your Global Trade Partner</span>
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-lg">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] drop-shadow-[0_4px_12px_rgba(0,0,0,0.7)]">
               Connecting Markets Across the World
             </h1>
 
             {/* Subtitle */}
-            <p className="text-slate-200 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-white font-medium text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               We specialize in export and import, delivering quality products,
               reliable logistics and global trade solutions.
             </p>

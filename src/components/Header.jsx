@@ -64,13 +64,13 @@ export default function Header() {
 
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24 sm:h-28">
           {/* Brand Logo */}
-          <Link to="/" className="flex items-center gap-3 group focus:outline-none">
+          <Link to="/" className="flex items-center gap-3 group focus:outline-none py-2">
             <img
               src="/assets/logo.png"
               alt="AK Enterprises Logo"
-              className="h-16 sm:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-20 sm:h-24 md:h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 
