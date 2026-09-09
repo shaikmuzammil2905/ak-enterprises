@@ -66,7 +66,7 @@ export default function HomePage() {
           <img
             src="/assets/hero-bg.png"
             alt="AK Enterprises Global Trade"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-[85%_50%] sm:object-center"
           />
           {/* Light subtle gradient overlay - removes heavy darkness/shadow while preserving text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/45 via-slate-900/20 to-transparent" />
