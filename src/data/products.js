@@ -5,7 +5,7 @@ export const CATEGORIES = [
     slug: 'electronics',
     tagline: 'Smart Tech, Better Life',
     description: 'Cutting-edge gadgets, audio gear, smart wearables and consumer tech carefully sourced from verified global manufacturers.',
-    image: '/assets/image-copy-4.png',
+    image: '/assets/cat-electronics.png',
     itemCount: 24,
     icon: 'Laptop'
   },
@@ -25,7 +25,7 @@ export const CATEGORIES = [
     slug: 'industrial-products',
     tagline: 'Built for Performance',
     description: 'Commercial power tools, precision hardware, measurement instruments and workshop equipment with rigorous safety standards.',
-    image: '/assets/image-copy-6.png',
+    image: '/assets/cat-industrial.png',
     itemCount: 32,
     icon: 'Wrench'
   },
@@ -35,7 +35,7 @@ export const CATEGORIES = [
     slug: 'office-supplies',
     tagline: 'Work Smarter',
     description: 'Ergonomic seating, executive desk accessories, stationery and productivity essentials for modern corporate workspaces.',
-    image: '/assets/image-copy-7.png',
+    image: '/assets/cat-office.png',
     itemCount: 15,
     icon: 'Briefcase'
   },
@@ -45,7 +45,7 @@ export const CATEGORIES = [
     slug: 'general-merchandise',
     tagline: 'Daily Needs, Global Quality',
     description: 'Carefully curated lifestyle goods, travel gear, storage solutions and daily utilities with international standard QC.',
-    image: '/assets/image-copy-8.png',
+    image: '/assets/cat-merchandise.png',
     itemCount: 28,
     icon: 'PackageCheck'
   }
@@ -141,6 +141,7 @@ export const PRODUCTS = [
     isFeatured: true,
     badge: 'Best Value',
     images: [
+      '/assets/product-cookware.png',
       'https://images.unsplash.com/photo-1584990347449-34b8c9a8faec?w=800&auto=format&fit=crop&q=80',
       'https://images.unsplash.com/photo-1584990347462-a557b420f1ec?w=800&auto=format&fit=crop&q=80',
       'https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&auto=format&fit=crop&q=80'
@@ -212,6 +213,7 @@ export const PRODUCTS = [
     isFeatured: true,
     badge: 'Ergonomic',
     images: [
+      '/assets/product-office-chair.png',
       'https://images.unsplash.com/photo-1580481077195-c3a821a58875?w=800&auto=format&fit=crop&q=80',
       'https://images.unsplash.com/photo-1505797149-43b0069ec26b?w=800&auto=format&fit=crop&q=80'
     ],
